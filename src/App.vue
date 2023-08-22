@@ -1,28 +1,51 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <main-form></main-form>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MainForm from "./components/MainForm";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+      MainForm
   }
 }
 </script>
 
 <style>
+  html, body {
+  height: 100%;
+}
+body {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  padding: 60px 30px;
+  box-sizing: border-box;
+  min-height: 100%;
+  max-width: 1920px;
+  background-color: #ffffff;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/Montserrat-SemiBold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/Montserrat-Medium.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/Montserrat-Regular.ttf');
+  font-weight: 500;
 }
 </style>
